@@ -1,0 +1,22 @@
+## YAML Template.
+---
+spring:
+  datasource:
+    driver-class-name: "com.mysql.cj.jdbc.Driver"
+    name: "demo_project"
+    username: username
+    password: passwor
+    url: "jdbc:mysql://localhost:3306/demo_project?&jdbcCompliantTruncation=false"
+  jpa:
+    hibernate.ddl-auto: update
+  main:
+    allow-circular-references: true
+server:
+  port: 8081
+jwt:
+  secret: demo.test.tax_application
+rabbitmq:
+  dynamic: true
+  port: 15672
+  username: guest
+  password: guest
